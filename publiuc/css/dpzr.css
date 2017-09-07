@@ -1,0 +1,122 @@
+/*店铺装让*/
+
+/*下载按钮*/
+body { 
+	padding-bottom: 40px; 
+}
+.download_button{
+	min-height: 40px;
+	background-color:#ff3381 ;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 15px;
+	line-height: 40px;
+}
+
+/*标题*/
+.details_title{
+	line-height: 35px;
+	font-size: 15px;
+	font-weight: normal;
+}
+
+/*时间标题*/
+.details_time_left{
+	margin-right: 8px;
+	line-height: 13px;
+}
+
+/*被浏览的次数*/
+.details_num{
+	text-align: right;
+}
+
+/*时间所在行字体*/
+.details_time{
+	height: 30px;
+	line-height: 13px;
+	font-size: 10px;
+	color: #999999;
+}
+
+.second_row{
+	margin-top: 22px;	
+}
+
+.second_top{
+	width: 100%;
+	text-align: center;
+	color: #999999;
+	font-size: 13px;
+}
+
+.second_bottom{
+	width: 100%;
+	text-align: center;
+	color: #FF3381;
+	font-size: 15px;
+	margin-top: 8px;
+	margin-bottom: 5px;
+}
+
+/*信息行*/
+.new_line{
+	line-height: 40px;
+}
+
+/*信息左侧*/
+.new_left{
+	font-size: 13px;
+	color: #999999;
+}
+
+/*信息内容*/
+.new_content{
+	font-size: 14px;
+	color: #222222;
+}
+
+/*基本信息标题*/
+.introduce_top{
+	line-height: 30px;
+	margin-top: 5px;
+}
+
+/*标题前边框*/
+.borde_left{
+	margin-right: 7px;
+	border-left:2px double #FF3381;
+}
+
+/*工作经历内容*/
+.introduce_bottom{
+	line-height: 22px;
+	font-size: 14px;
+	color: #222222;
+	
+}
+
+/*描述内容展开与闭合*/
+.details_introduce{
+	display:-webkit-box !important; /*将对象作为弹性伸缩盒显示*/
+    /*overflow:hidden;*/
+    overflow:overlay; /*内容区可滚动*/
+  
+    text-overflow:ellipsis; /*截断符*/
+    word-break:break-all; /*强制换行*/
+
+    -webkit-box-orient:vertical; /*让块按垂直方向排版*/
+    -webkit-line-clamp:2;  /*显示的行数*/
+}
+
+/*描述图标居中*/
+.details_label{
+	text-align: center;
+}
+
+/*描述图标样式*/
+.label_down{
+	color: #c8c8c8;
+	font-weight:100;
+	font-size: 10px;
+}

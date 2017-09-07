@@ -1,0 +1,225 @@
+/*公共css*/
+
+
+/*项目字体*/
+
+@font-face {
+	font-family: 'fzlt';
+	src: url(../../bootstrap/fonts/fzlt.ttf);
+}
+
+body,
+button,
+input,
+select,
+textarea,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: fzlt;
+	font-weight: normal;
+}
+
+
+/*删除栅格中的间隔*/
+
+.del_space {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+
+/*页面两端间隔*/
+
+.row_padding {
+	/*padding-left: 12px;*/
+	/*padding-right: 12px;*/
+	margin: 10px 0;
+}
+
+
+/*地图*/
+
+.map {
+	width: 100%;
+	height: 201px;
+}
+
+
+/*幻灯片*/
+
+.swiper_img {
+	width: 100%;
+}
+
+
+/*粗分割线*/
+
+.line_blod {
+	width: 100%;
+	height: 12px;
+	background-color: #EEEEEE;
+}
+
+
+/*细分割线*/
+
+.line_thin {
+	width: 100%;
+	height: 2px;
+	background-color: #EEEEEE;
+}
+
+
+/*向左浮动*/
+
+.fl {
+	float: left;
+}
+
+
+/*向右浮动*/
+
+.fr {
+	float: right;
+}
+
+
+/*zhaopin-fixed*/
+
+.zhaopin-fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #FFF;
+	z-index: 2;
+	max-height: 45px;
+	border-bottom: 1px solid #EEEEEE;
+}
+
+.zhaopin-fixed h4 {
+	text-align: center;
+	line-height: 25px;
+}
+
+.zhaopin-d1 {
+	float: left;
+	position: absolute;
+	top: 10px;
+	left: 12px;
+}
+
+.zhaopin-d2 {
+	float: right;
+	position: absolute;
+	top: 10px;
+	right: 12px;
+}
+
+.zhaopin-d1 img,
+.zhaopin-d2 img {
+	height: 25px;
+}
+
+
+/*留言*/
+
+.liulan-main {
+	padding: 15px 0;
+	border-bottom: 1px solid #eeeeee;
+}
+
+.liulan-main ul {
+	display: -webkit-flex;
+	-webkit-align-content: space-between;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.liulan-main-li1 {
+	width: 25%;
+}
+
+.liulan-main-li2 div:nth-child(1) {
+	padding: 10px 0;
+}
+
+.liulan-main-li2 div:nth-child(2),
+.liulan-main-li2 div:nth-child(3) {
+	font-size: 12px;
+	line-height: 20px;
+}
+
+.liulan-main-li1 img {
+	width: 100%;
+}
+
+.liulan-main-li2 {
+	width: 75%;
+}
+
+.liulan-main-li2 h4 {
+	float: left;
+	margin: 0;
+	font-size: 14px;
+}
+
+.liulan-main-li2 time {
+	float: right;
+	font-size: 12px;
+}
+
+.liulan-main-li2 div:nth-child(2) img,
+.liulan-main-li2 div:nth-child(3) img {
+	width: 13px;
+	margin-top: -3px;
+}
+
+
+/*footer*/
+.dianpu-foot{
+	border-top: 1px solid #eeeeee;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: 3;
+	background-color: #fff;
+}
+.dianpu-foot ul{
+	display: -webkit-flex;
+	margin: 0;
+	padding: 0;
+}
+.dianpu-foot ul li{
+	width: 25%;
+	list-style: none;
+	margin: 5px 0;
+}
+.dianpu-foot ul li:nth-child(4){
+	margin: 0;
+}
+.dianpu-foot ul li img{
+	display: block;
+	margin: 0 auto;
+	width: 23px;
+	height: 20px;
+}
+.dianpu-foot ul li p{
+	text-align: center;
+	margin: 0;
+	font-size: 14px;
+}
+.dianpu-foot ul li h5{
+	margin: 0;
+	text-align: center;
+	font-size: 16px;
+	color: white;
+	background-color: #FD377D;;
+	line-height: 50px;
+}

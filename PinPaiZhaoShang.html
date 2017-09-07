@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta content="width=device-width,user-scalable=no" name="viewport">
+		<link rel="icon" href="images/ytw.ico" />
+		<link rel="stylesheet" type="text/css" href="css/webapp.css" />
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+		<title>品牌招商</title>
+		<script>
+			(function() {
+				var html = document.documentElement;
+				var width = html.getBoundingClientRect().width;
+				html.style.fontSize = width / 18.7 + "px";
+			})();
+			//1rem=20px
+		</script>
+	</head>
+
+	<body oncontextmenu="self.event.returnValue=false">
+		<header class="muying-fixed">
+			<h5>品牌招商</h5>
+			<a href="index.html"><img src="images/ytw_fanhui.png" /></a>
+			<a href="JinPaiDaiLi-FaBu.html"><img src="images/fabu.png" /></a>
+			<a href="MuYingJiGou-sousuo.html"><img src="images/sousuo.png" /></a>
+		</header>
+
+		<div class="subnav subnav-ppzs" style="background: #EEEEEE;">
+			<ul>
+				<li class="active2 repeat-yuezi">
+					<p>全部</p>
+				</li>
+				<li>
+					<p>奶粉</p>
+				</li>
+				<li>
+					<p>尿裤</p>
+				</li>
+				<li>
+					<p>辅食</p>
+				</li>
+				<li>
+					<p>洗护</p>
+				</li>
+				<li>
+					<p>哺育</p>
+				</li>
+				<li>
+					<p>玩具</p>
+				</li>
+				<li>
+					<p>童装</p>
+				</li>
+				<li>
+					<p>车床</p>
+				</li>
+				<li>
+					<p>其他</p>
+				</li>
+			</ul>
+		</div>
+		<div style="height: 4.5rem;"></div>
+		<!--列表-->
+		<a href="DianPuXiangQing.html">
+			<div class="dpzr-main clear">
+				<div class="dpzr-main1 left">
+					<img src="images/yingnaifen.jpg"/>
+				</div>
+				<div class="dpzr-main2 left">
+					<h4>陕西凯达乳业</h4>
+					<p class="jpdl-p1">100%棉</p>
+					<div class="dpzr-main5 clear">
+						<p class="left">资质:2</p>
+						<p class="right">浏览187次</p>
+					</div>
+				</div>
+			</div>
+		</a>
+		<a href="DianPuXiangQing.html">
+			<div class="dpzr-main clear">
+				<div class="dpzr-main1 left">
+					<img src="images/yingnaifen.jpg"/>
+				</div>
+				<div class="dpzr-main2 left">
+					<h4>陕西凯达乳业</h4>
+					<p class="jpdl-p1">100%棉</p>
+					<div class="dpzr-main5 clear">
+						<p class="left">资质:2</p>
+						<p class="right">浏览187次</p>
+					</div>
+				</div>
+			</div>
+		</a>
+		<a href="DianPuXiangQing.html">
+			<div class="dpzr-main clear">
+				<div class="dpzr-main1 left">
+					<img src="images/yingnaifen.jpg"/>
+				</div>
+				<div class="dpzr-main2 left">
+					<h4>陕西凯达乳业</h4>
+					<p class="jpdl-p1">100%棉</p>
+					<div class="dpzr-main5 clear">
+						<p class="left">资质:2</p>
+						<p class="right">浏览187次</p>
+					</div>
+				</div>
+			</div>
+		</a>
+		<a href="DianPuXiangQing.html">
+			<div class="dpzr-main clear">
+				<div class="dpzr-main1 left">
+					<img src="images/yingnaifen.jpg"/>
+				</div>
+				<div class="dpzr-main2 left">
+					<h4>陕西凯达乳业</h4>
+					<p class="jpdl-p1">100%棉</p>
+					<div class="dpzr-main5 clear">
+						<p class="left">资质:2</p>
+						<p class="right">浏览187次</p>
+					</div>
+				</div>
+			</div>
+		</a>
+		<a href="DianPuXiangQing.html">
+			<div class="dpzr-main clear">
+				<div class="dpzr-main1 left">
+					<img src="images/yingnaifen.jpg"/>
+				</div>
+				<div class="dpzr-main2 left">
+					<h4>陕西凯达乳业</h4>
+					<p class="jpdl-p1">100%棉</p>
+					<div class="dpzr-main5 clear">
+						<p class="left">资质:2</p>
+						<p class="right">浏览187次</p>
+					</div>
+				</div>
+			</div>
+		</a>
+		<a href="DianPuXiangQing.html">
+			<div class="dpzr-main clear">
+				<div class="dpzr-main1 left">
+					<img src="images/yingnaifen.jpg"/>
+				</div>
+				<div class="dpzr-main2 left">
+					<h4>陕西凯达乳业</h4>
+					<p class="jpdl-p1">100%棉</p>
+					<div class="dpzr-main5 clear">
+						<p class="left">资质:2</p>
+						<p class="right">浏览187次</p>
+					</div>
+				</div>
+			</div>
+		</a>
+		
+
+		<script type="text/javascript">
+			$(".subnav ul li").click(function() {
+				setSubnavLeft($(this).index());
+			});
+
+			function setSubnavLeft(index) {
+				$(".subnav ul li").eq(index).addClass("active2").siblings().removeClass("active2");
+				var width = $(".subnav ul").width();
+				var thisWidth = $(".subnav ul li").eq(index).width();
+				var left = Math.abs($(".subnav ul li").offset().left);
+				var thisLeft = $(".subnav ul li").eq(index).offset().left;
+				var scrollLeft = left + thisLeft + thisWidth / 2 - width / 2;
+				$(".subnav ul").animate({
+					scrollLeft: scrollLeft
+				}, 300);
+			}
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta content="width=device-width,user-scalable=no" name="viewport">
+		<link rel="icon" href="images/ytw.ico" />
+		<link rel="stylesheet" type="text/css" href="css/webapp.css" />
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+		<title>发布</title>
+		<script>
+			(function() {
+				var html = document.documentElement;
+				var width = html.getBoundingClientRect().width;
+				html.style.fontSize = width / 18.7 + "px";
+			})();
+			//1rem=20px
+		</script>
+	</head>
+
+	<body oncontextmenu="self.event.returnValue=false">
+		<footer>
+			<section class="dpxq3-fixed1">
+				<h4>发布</h4>
+				<a href="MuYingJiGou.html">
+					<img src="images/ytw_fanhui.png">
+				</a>
+			</section>
+		</footer>
+
+		<div class="ytw-fabu">
+			<div class="ytw-fabu1"><img src="images/xianji.png" /></div>
+			<p>上传图片</p>
+		</div>
+
+		<div class="fabu2-form">
+			<ul class="fabu2-ul">
+				<li>
+					<span>机构名称</span><input type="text" placeholder="16字以内" />
+				</li>
+				<li class="fabu2-ul2">
+					<span>类型选择</span><input type="text" placeholder="请输入机构类型" /><img src="images/jinrufu.png" />
+				</li>
+				<li class="fabu2-ul2">
+					<span>机构描述</span><input type="text" placeholder="请描述一下您的机构" /><img src="images/jinrufu.png" />
+				</li>
+				<li>
+					<span>适合人群</span><input type="text" placeholder="请填写适合人群" />
+				</li>
+			</ul>
+		</div>
+		<div class="fabu2-form">
+			<ul class="fabu2-ul">
+				<li class="fabu2-ul2">
+					<span>机构地址</span><input type="text" placeholder="请选择机构地址" /><img src="images/jinrufu.png" />
+				</li>
+				<li>
+					<span>详细地址</span><input type="text" placeholder="请输入详细地址" />
+				</li>
+			</ul>
+		</div>
+		<div class="fabu2-form">
+			<ul class="fabu2-ul">
+				<li class="fabu2-ul2">
+					<span>联系人　</span>
+					<input type="text" class="ul2-lianxiren1" placeholder="请输入联系人姓名" />
+					<section class="fabu2-sec">
+						<a href="javascript:;"><img src="images/xuanzhong.png"/>&nbsp;男</a>
+						<a href="javascript:;"><img src="images/weixuanzhong.png"/>&nbsp;女</a>
+					</section>
+				</li>
+				<li>
+					<span>联系电话</span><input type="text" placeholder="请输入联系人电话" />
+				</li>
+			</ul>
+		</div>
+		
+		<div class="fb-button">
+			<input type="button" value="发布"/>
+		</div>
+	</body>
+
+</html>

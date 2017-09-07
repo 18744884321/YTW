@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,user-scalable=no" />
+		<link rel="icon" href="images/ytw.ico" />
+		<link rel="stylesheet" type="text/css" href="css/webapp.css" />
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+		<script type="text/javascript" src="js/lunbo.js"></script>
+		<title>商品详情</title>
+		<script>
+			(function() {
+				var html = document.documentElement;
+				var width = html.getBoundingClientRect().width;
+				html.style.fontSize = width / 18.7 + "px";
+			})();
+			//1rem=20px
+		</script>
+	</head>
+
+	<body>
+		<nav class="fenxiang-fixed">
+			<!-- banner轮播开始 -->
+			<div class="wrapper">
+				<div class="swipe">
+					<ul id="slider">
+						<li style="display:block">
+							<img width="100%" src="images/1498699974.png" alt="" />
+						</li>
+						<li>
+							<img width="100%" src="images/1498699974.png" alt="" />
+						</li>
+					</ul>
+					<div id="pagenavi">
+						<a href="javascript:void(0);" class="active">1</a>
+						<a href="javascript:void(0);">2</a>
+					</div>
+				</div>
+			</div>
+			<!-- banner轮播 js开始-->
+			<script type="text/javascript">
+				var active = 0,
+					as = document.getElementById('pagenavi').getElementsByTagName('a');
+				for(var i = 0; i < as.length; i++) {
+					(function() {
+						var j = i;
+						as[i].onclick = function() {
+							t2.slide(j);
+							return false;
+						}
+					})();
+				}
+
+				var t1 = new TouchScroll({
+					id: 'wrapper',
+					'width': 5,
+					'opacity': 0.7,
+					color: '#555',
+					minLength: 20
+				});
+
+				var t2 = new TouchSlider({
+					id: 'slider',
+					speed: 600,
+					timeout: 6000,
+					before: function(index) {
+						as[active].className = '';
+						active = index;
+						as[active].className = 'active';
+					}
+				});
+			</script>
+
+			<!--分享-->
+			<div class="fenxiang-top clear">
+				<a href="index.html" class="left"><img src="images/xiangqingye_fanhui.png" /></a>
+				<a href="" class="right"><img src="images/xiangqingye-fenxiang.png" /></a>
+			</div>
+		</nav>
+
+		<!--内容-->
+		<section class="fenxiang-sec">
+			<h5 class="fenxiang-sec-h5">美嗯智奶粉韩国原装进口婴儿配方牛奶粉1段750g</h5>
+			<div class="fenxiang-biaojia">
+				<span>￥</span><span>288.0</span>
+			</div>
+			<div class="fenxiang-details clear">
+				<div class="fenxiang-details1 left">
+					<ul>
+						<li>净重:</li>
+						<li>适用:</li>
+						<li>原产地:</li>
+						<li>包装:</li>
+					</ul>
+				</div>
+				<div class="fenxiang-details2 left">
+					<ul>
+						<li>750g</li>
+						<li>0-6个月</li>
+						<li>韩国</li>
+						<li>罐装</li>
+					</ul>
+				</div>
+			</div>
+			<div class="fenxiang-contact clear">
+				<div class="fenxiang-contact1 left">
+					<ul>
+						<li class="fenxiang-contact1-li1">
+							<img src="images/zyz_banner_pic.png" />
+							<span>亲亲草霞梧店</span>
+						</li>
+						<li class="fenxiang-contact1-li2">
+							<img src="images/地址图标.png" />
+							<span>厦门市集美区霞梧里73号102</span>
+						</li>
+					</ul>
+				</div>
+				<div class="fenxiang-contact2 right">
+					<img src="images/客服LOGO.png" />客服
+				</div>
+			</div>
+			<div class="fenxiang-contact3">
+				<ul>
+					<li class="fenxiang-contact3-li1">
+						<img src="images/距离图标.png" />
+						<span>7km</span>
+					</li>
+					<li class="fenxiang-contact3-li2">
+						<img src="images/导航前往.png" />
+					</li>
+			</div>
+			<div class="fenxiang-contact3">
+				<ul>
+					<li class="fenxiang-contact3-li1">
+						<img src="images/电话图标.png" />
+						<span>15880298292</span>
+					</li>
+					<li class="fenxiang-contact3-li2">
+						<img src="images/一键拨打.png" />
+					</li>
+			</div>
+			<div class="fenxiang-contact4">查看评价(<span>0</span>)</div>
+			<div class="fenxiang-tuwen">
+				<ul>
+					<li class="fenxiang-tuwen1">
+						<div></div>
+					</li>
+					<li>图文详情</li>
+					<li class="fenxiang-tuwen3">
+						<div></div>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<!--详情footer-->
+		<footer class="xiangqing-footer">
+			<ul>
+				<li class="xiangqing-footer-li">
+					<img src="images/未收藏心.png" />
+					<span>收藏</span>
+				</li>
+				<li class="xiangqing-footer-li">
+					<a href="GouWuChe.html">
+						<img src="images/购物车.png" />
+						<span>购物车</span>
+					</a>
+				</li>
+				<li class="xiangqing-footer-li2">
+					<a href="#">加入购物车</a>
+				</li>
+			</ul>
+		</footer>
+	</body>
+
+</html>

@@ -1,0 +1,177 @@
+/*品牌招商*/
+
+/*下载按钮*/
+body { 
+	padding-bottom: 40px; 
+}
+.download_button{
+	min-height: 40px;
+	background-color:#ff3381 ;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 15px;
+	line-height: 40px;
+}
+
+/*证书图片外DIV*/
+.license_img{
+	float: left;
+}
+
+/*证书图片*/
+.all_license_img{
+	width: 100%;
+	height: 100%;
+}
+
+#test{
+	margin-bottom: 16px;
+}
+
+/*招商全部页标题*/
+.all_title{
+	font-size: 16px;
+	color: #000000;
+	line-height: 30px;
+	margin-top: 5px;;
+}
+
+/*品牌介绍*/
+.all_brand{
+	font-size: 12px;
+	color: #808080;
+	line-height: 18px;
+}
+
+/*时间行*/
+.details_time{
+	font-size: 10px;
+	color: #999999;
+	line-height: 30px;
+	margin-bottom: 5px;
+}
+
+/*浏览次数*/
+.read_num{
+	text-align: right;
+}
+
+/*时间左侧*/
+.time_left{
+	margin-right:8px ;
+}
+
+/*标题前边框*/
+.borde_left{
+	margin-right: 7px;
+	border-left:2px double #FF3381;
+}
+
+/*信息左侧*/
+.new_left{
+	font-size: 13px;
+	color: #999999;
+}
+
+/*信息内容*/
+.new_content{
+	font-size: 14px;
+	color: #222222;
+}
+
+/*企业简介标题*/
+.introduce_top{
+	line-height: 30px;
+	margin-top: 5px;
+}
+
+/*企业简介内容*/
+.introduce_bottom{
+	line-height: 22px;
+	font-size: 14px;
+	color: #222222;
+	
+}
+/*描述内容展开与闭合*/
+.details_introduce{
+	display:-webkit-box !important; /*将对象作为弹性伸缩盒显示*/
+    /*overflow:hidden;*/
+    overflow:overlay; /*内容区可滚动*/
+  
+    text-overflow:ellipsis; /*截断符*/
+    word-break:break-all; /*强制换行*/
+
+    -webkit-box-orient:vertical; /*让块按垂直方向排版*/
+    -webkit-line-clamp:2;  /*显示的行数*/
+}
+
+/*描述图标居中*/
+.details_label{
+	text-align: center;
+}
+
+/*描述图标样式*/
+.label_down{
+	color: #c8c8c8;
+	font-weight:100;
+	font-size: 10px;
+}
+
+/*官网*/
+.url{
+	font-size: 10px;
+	color: #222222;
+}
+
+/*信息行*/
+.new_line{
+	line-height: 40px;
+}
+
+/*品牌招商*/
+.company_row{
+	padding-left: 2px;
+	padding-right: 2px;
+	/*padding-top: 2px;*/
+}
+.company{
+	float: left;
+	border-left:2px double #EEEEEE;
+	border-right:2px double #EEEEEE;
+	border-top:2px double #EEEEEE;
+	border-bottom:2px double #EEEEEE;
+	margin-top: 2px;
+}
+.img_div{
+	float: left;
+}
+.company_title{
+	float: left;
+	color: #666666;
+	font-size: 13px;
+	margin-left: 12px;
+	margin-top: 7px;
+}
+.company_address{
+	float: left;
+	color: #999999;
+	font-size: 10px;
+	margin-left: 12px;
+	line-height: 20px;
+}
+.all_company_img{
+	width: 100%;
+	height: 100%;
+}
+
+/*单个招商-商品类别*/
+.product_type{
+	font-size: 10px;
+    color: #999999;
+    margin-bottom: 17px;
+}
+
+
+
+
+

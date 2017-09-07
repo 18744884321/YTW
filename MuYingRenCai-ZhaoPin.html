@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta content="width=device-width,user-scalable=no" name="viewport">
+		<link rel="icon" href="images/ytw.ico" />
+		<link rel="stylesheet" type="text/css" href="css/webapp.css" />
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+		<title>发布</title>
+		<script>
+			(function() {
+				var html = document.documentElement;
+				var width = html.getBoundingClientRect().width;
+				html.style.fontSize = width / 18.7 + "px";
+			})();
+			//1rem=20px
+		</script>
+	</head>
+
+	<body oncontextmenu="self.event.returnValue=false">
+		<footer>
+			<section class="dpxq3-fixed1">
+				<h4>发布</h4>
+				<a href="MuYingRenCai.html">
+					<img src="images/ytw_fanhui.png">
+				</a>
+			</section>
+		</footer>
+
+		<div class="fabu2-form">
+			<ul class="fabu2-ul">
+				<li>
+					<span>标　　题</span><input type="text" placeholder="请输入标题" />
+				</li>
+				<li class="fabu2-ul2">
+					<span>招聘岗位</span><input type="text" placeholder="请选择招聘岗位" /><img src="images/jinrufu.png" />
+				</li>
+				<li class="fabu2-ul2">
+					<span>性别要求</span><input type="text" placeholder="请选择" /><img src="images/jinrufu.png" />
+				</li>
+				<li class="fabu2-ul2">
+					<span>年龄要求</span><input type="text" placeholder="请选择" /><img src="images/jinrufu.png" />
+				</li>
+				<li class="fabu2-ul2">
+					<span>薪资水平</span><input type="text" placeholder="请选择薪资水平" /><img src="images/jinrufu.png" />
+				</li>
+				<li class="fabu2-ul2">
+					<span>工作年限</span><input type="text" placeholder="请选择工作年限要求" /><img src="images/jinrufu.png" />
+				</li>
+				<li class="fabu2-ul2">
+					<span>职位描述</span><input type="text" placeholder="请描述一下岗位职责" /><img src="images/jinrufu.png" />
+				</li>
+				<li class="fabu2-ul2">
+					<span>福利待遇</span><input type="text" placeholder="请输入福利待遇" /><img src="images/jinrufu.png" />
+				</li>
+			</ul>
+		</div>
+		
+		<div class="fb-button">
+			<input type="button" value="发布"/>
+		</div>
+	</body>
+
+</html>

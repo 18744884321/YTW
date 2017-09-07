@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,user-scalable=no" />
+		<link rel="icon" type="text/css" href="images/ytw.ico" />
+		<link rel="stylesheet" type="text/css" href="css/webapp.css" />
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=kpLOfBbEpcAF2TaGB1Aqtzmd"></script>
+		<script type="text/ecmascript" src="js/md5.js"></script>
+		<script type="text/ecmascript" src="js/sha1.js"></script>
+		<script src="js/Vue.js v2.4.2.js"></script>
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+		<script type="text/javascript" src="js/lunbo.js"></script>
+		<title>婴通网</title>
+		<script>
+			(function() {
+				var html = document.documentElement;
+				var width = html.getBoundingClientRect().width;
+				html.style.fontSize = width / 18.7 + "px";
+			})();
+			//1rem=20px
+		</script>
+	</head>
+
+	<body>
+		<!--首页header-->
+		<div class="ytw-header">
+			<div>
+				<img src="images/logo_nav2.png" />
+			</div>
+			<a href="#">
+				<div class="ytw-header-div2">
+					<img src="images/ytw_shouye_dingwei.png" />
+					<span id="dingwei">
+						<span id="allmap" style="display: none;"></span>
+					</span>
+				</div>
+				<a href="XiaoXi.html">
+					<div class="ytw-header-div3">
+						<img src="images/ytw_shouye_xiaoxi.png" />
+						<span class="xx-number">9</span>
+					</div>
+				</a>
+			</a>
+		</div>
+
+		<div id="app">
+			<!--导航块-->
+			<div class="subnav">
+				<ul>
+					<li v-for="i in cat_list" v-text="i.title"></li>
+				</ul>
+			</div>
+			<!--内容区域-->
+			<section class="ytw-section">
+				<!-- banner轮播开始 -->
+				<div class="wrapper">
+					<div class="swipe">
+						<ul id="slider">
+							<li><img :src="top_ad_img_list" /></li>
+							<li><img :src="top_ad_img_list1" /></li>
+							<li>
+								<a href="#"><img :src="top_ad_img_list2" /></a>
+							</li>
+						</ul>
+						<div id="pagenavi">
+							<a href="javascript:void(0);" class="active">1</a>
+							<a href="javascript:void(0);">2</a>
+							<a href="javascript:void(0);">3</a>
+						</div>
+					</div>
+				</div>
+
+				<!--end 公告-->
+				<div class="notice clear">
+					<div class="toutiao"><img src="images/yingtongtoutiao.png" /></div>
+					<div class="gonggao">
+						<ul>
+							<li v-for="item in news_list" v-text="item.title"></li>
+						</ul>
+					</div>
+				</div>
+				<!--end 公告结束-->
+
+				<!--栏目-->
+				<div class="ytw-lanmu">
+					<ul>
+						<li>
+							<a href="#">
+								<img src="images/zhigoushangcheng.png" />
+								<p>直购商城</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/lamashequ.png" />
+								<p>辣妈社区</p>
+							</a>
+						</li>
+						<li>
+							<a href="XianShiMiaoSha.html">
+								<img src="images/xianshimiaosha.png" />
+								<p>限时秒杀</p>
+							</a>
+						</li>
+						<li>
+							<a href="MuYingJiGou.html">
+								<img src="images/muyingjigou.png" />
+								<p>母婴机构</p>
+							</a>
+						</li>
+
+						<li>
+							<a href="MuYingRenCai.html">
+								<img src="images/rencaishichang.png" />
+								<p>母婴人才</p>
+							</a>
+						</li>
+						<li>
+							<a href="DianPuZhuanRang.html">
+								<img src="images/dianpuzhuanrang.png" />
+								<p>店铺转让</p>
+							</a>
+						</li>
+						<li>
+							<a href="JinPaiDaiLi.html">
+								<img src="images/jinpaidaili.png" />
+								<p>金牌代理</p>
+							</a>
+						</li>
+						<li>
+							<a href="PinPaiZhaoShang.html">
+								<img src="images/pinpaizhaoshang.png" />
+								<p>品牌招商</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div id="xianshi">
+					<div class="ytw-chart">
+						<a :href="uri"><img :src="head_img" /></a>
+					</div>
+
+					<!--限时秒杀-->
+					<div class="ytw-miaosha" v-if="seckill_list!=''">
+						<div class="ytw-miaosha1">限时秒杀</div>
+						<div v-for="item in seckill_list" class="ytw-miaosha2 clear">
+							<a href="ShangPinXiangQing.html">
+								<div class="ytw-miaosha3"><img :src="item.head_img" /></div>
+								<div class="ytw-miaosha4">
+									<p v-text="item.title"></p>
+									<div class="Seckill-time">
+										<ul>
+											<li class="Seckill-bg">06</li>
+											<li style="font-size: 0.6rem;">天</li>
+											<li class="Seckill-bg">06</li>
+											<li>:</li>
+											<li class="Seckill-bg">06</li>
+											<li>:</li>
+											<li class="Seckill-bg">06</li>
+											<li class="Price">￥<span v-text="item.kill_price"></span></li>
+										</ul>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<!--人气商家-->
+				<div class="ytw-shangjia">
+					<div class="ytw-miaosha11">人气商家</div>
+					<div class="ytw-shangjia1 clear" v-for="item in shop_list">
+						<a href="DianPuShouYe.html">
+							<div class="ytw-sj1">
+								<img src="images/bangdianbao_vip.png" />
+								<img :src="item.head_img" />
+							</div>
+							<div class="ytw-sj2">
+								<div class="sj2-bt">
+									<span><img src="images/dandian.png"/></span>
+									<span v-text="item.name">婴正全国连锁（厦门）配送中心</span>
+								</div>
+								<div class="sj2-bt2">
+									<span><img src="images/xingxingliang.png"/><img src="images/xingxingliang.png"/><img src="images/xingxingliang.png"/><img src="images/xingxingliang.png"/><img src="images/xingxingliang.png"/></span>
+									<span v-text="item.full_address">厦门湖里区长乐路350号国际展览馆4026</span>
+								</div>
+								<div class="sj2-bt3 clear">
+									<div>￥<span v-text="item.dispatching_price"></span>起送</div>
+									<div v-text="item.range">54m</div>
+								</div>
+								<div class="sj2-bt4" v-if="item.seckill_num>=1">
+									<img src="images/miao.png" /><span v-text="item.seckill_num"></span><span>个秒杀</span>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<!--猜您喜欢-->
+				<div class="ytw-shangjia">
+					<div class="ytw-miaosha11">猜您喜欢</div>
+
+					<div class="ytw-xihuan">
+						<ul>
+							<li v-for="i in list">
+								<a href="ShangPinXiangQing.html">
+									<div class="ytw-xihuan1"><img :src="i.head_img" /></div>
+									<p class="ytw-xihuan-p" v-text="i.title"></p>
+									<div class="ytw-xihuan2">
+										<ul>
+											<li class="xihuan2-li1">
+												<span>￥</span>
+												<span v-text="i.price"></span>
+											</li>
+											<li class="xihuan2-li2" v-text="i.range"></li>
+										</ul>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<!--共用footer-->
+		<footer class="ytw-footer">
+			<ul>
+				<li>
+					<a href="index.html"><img src="images/tab_home_selected.png" alt="首页" />
+						<p>首页</p>
+					</a>
+				</li>
+				<li>
+					<a href="FuJin.html"><img src="images/tab_near_normal.png" alt="附近" />
+						<p>附近</p>
+					</a>
+				</li>
+				<li>
+					<a href="SouSuo.html"><img src="images/tab_search_normal.png" alt="搜索" />
+						<p>搜索</p>
+					</a>
+				</li>
+				<li>
+					<a href="GouWuChe.html"><img src="images/tab_shopping_normal.png" alt="购物车" />
+						<p>购物车</p>
+					</a>
+				</li>
+				<li>
+					<a href="login/index.html"><img src="images/tab_mine_-normal.png" alt="我的" />
+						<p>我的</p>
+					</a>
+				</li>
+			</ul>
+		</footer>
+
+		<script type="text/javascript" src="js/public.js"></script>
+	</body>
+
+</html>

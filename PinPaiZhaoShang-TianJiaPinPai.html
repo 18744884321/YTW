@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta content="width=device-width,user-scalable=no" name="viewport">
+		<link rel="icon" href="images/ytw.ico" />
+		<link rel="stylesheet" type="text/css" href="css/webapp.css" />
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+		<title>添加品牌</title>
+		<script>
+			(function() {
+				var html = document.documentElement;
+				var width = html.getBoundingClientRect().width;
+				html.style.fontSize = width / 18.7 + "px";
+			})();
+			//1rem=20px
+		</script>
+	</head>
+
+	<body oncontextmenu="self.event.returnValue=false">
+		<footer>
+			<section class="dpxq3-fixed1">
+				<h4>添加品牌</h4>
+				<a href="WoDePinPai.html">
+					<img src="images/ytw_fanhui.png">
+				</a>
+			</section>
+		</footer>
+
+		<div class="ytw-fabu">
+			<div class="ytw-fabu1"><img src="images/xianji.png" /></div>
+			<p>上传图片</p>
+		</div>
+
+		<div class="fabu2-form">
+			<ul class="fabu2-ul">
+				<li>
+					<span>品牌名称</span><input type="text" placeholder="请输入品牌名称" />
+				</li>
+				<li class="fabu2-ul2">
+					<span>商品类别</span><input type="text" placeholder="请输入品牌类别" /><img src="images/jinrufu.png" />
+				</li>
+				<li class="fabu2-ul2">
+					<span>商品描述</span><input type="text" placeholder="请描述一下您的品牌" /><img src="images/jinrufu.png" />
+				</li>
+				<li class="fabu2-ul2">
+					<span>商品属性</span><input type="text" placeholder="请输入商品属性" /><img src="images/jinrufu.png" />
+				</li>
+				<li>
+					<span>代理地区</span><input type="text" placeholder="请输入代理地区" />
+				</li>
+			</ul>
+		</div>
+		
+		<div class="fb-button">
+			<input type="button" value="发布"/>
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,195 @@
+/*初始*/
+html{
+	max-width: 750px;
+	margin: 0 auto;
+}
+body{
+	margin: 0;
+}
+img{
+	vertical-align: middle;
+}
+ul,ol{
+	margin: 0 !important;
+	padding: 0;
+	list-style: none;
+}
+a{
+	text-decoration: none !important;
+	color: #000 !important;
+}
+h1,h2,h3,h4,h5,h6,p{
+	margin: 0 !important;
+}
+input{
+	outline: none;
+	vertical-align: middle;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.clear{
+	clear: both;
+}
+
+/*共用footer*/
+.ytw-footer{
+	width: 100%;
+	max-width: 750px;
+	position: fixed;
+	bottom: 0;
+	background-color: #FFFFFF;
+	padding-top: 0.4rem;
+	border-top: 1px solid #F7F7F7;
+}
+.ytw-footer ul{
+	display: flex;
+	justify-content: space-around;
+}
+.ytw-footer ul li img{
+	width: 1.15rem;
+	height: 1.15rem;
+	display: block;
+	margin: 0 auto;
+}
+.ytw-footer ul li p{
+	text-align: center;
+	font-size: 0.6rem;
+}
+
+/*header*/
+.sousuo-header{
+	max-width: 750px;
+	position: fixed;
+	z-index: 1;
+	background-color: #FFFFFF;
+	width: 100%;
+	height: 2.25rem;
+	padding: 0.4rem 0;
+	border-bottom: 1px solid #E5E5E5;
+}
+.sousuo-header input{
+	width: 15.8rem;
+	height: 1.45rem;
+	margin-left: 0.7rem;
+	text-align: center;
+	text-indent: 2rem;
+	border: none;
+	border-radius: 0.25rem;
+	font-size: 0.6rem;
+	background: #EEEEEE url(../images/sousuoye_sousuo.png) no-repeat 6rem;
+	background-size: 0.65rem 0.65rem;
+}
+.sousuo-xiaoxi{
+	display: block;
+	width: 1.75rem;
+	height: 1.55rem;
+	background: url(../images/ytw_shouye_xiaoxi.png) no-repeat 0.55rem 0.25rem;
+	background-size: 1.15rem 1.15rem;
+}
+
+/*sousuo-main*/
+.sousuo-main{
+	padding-top: 2.25rem
+}
+
+
+/*左侧*/
+.bDiv1{
+  width: 20%;
+  float: left;
+}
+.bDiv2{
+  width: 74%;
+  float: right;
+  margin-bottom: 2.5rem;
+}
+
+.nav li{
+  width: 4.75rem;
+  text-align: center;
+  border-bottom: 2px solid #FFFFFF !important;
+  font-size: 0.7rem;
+}
+.nav > li > a{
+	padding: 0 !important;
+	width: 4.75rem;
+	line-height: 2.75rem !important;
+}
+li a:link{
+  border: #333333;
+  background-color: #EEEEEE;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+	color: #FF3381 !important;
+}
+.nav-tabs > li > a{
+	border-radius: 0 !important;
+	border: 0 !important;
+	margin: 0 !important;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+	border: none !important;
+  	border-left: 4px solid #FF3381 !important;
+}
+
+/*内容1*/
+.bDiv2 ul li{
+	width: 3.65rem;
+	float: left;
+	margin: 0.3rem 0.48rem;
+}
+.bDiv2 ul li img{
+	width: 3.65rem;
+	height: 3.5rem;
+	border: 1px solid #999999;
+}
+.bDiv2 ul li p{
+	text-align: center;
+	font-size: 0.6rem;
+}
+.section1{
+	margin: 80% auto;
+	text-align: center;
+}
+
+
+
+/*购物车*/
+.ytw-gouwuche{
+	/*background-color: #eeeeee;*/
+}
+.gouwuche-nav{
+	position: fixed;
+	z-index: 99;
+	width: 100%;
+	max-width: 750px;
+	height: 2.25rem;
+	background-color: #FFFFFF;
+}
+.gouwuche-nav div:nth-child(1){
+	text-align: center;
+	font-size: 0.9rem;
+	line-height: 2.25rem;
+}
+.gouwuche-nav div:nth-child(2){
+	position: absolute;
+	top: 0;
+	right: 0.55rem;
+	line-height: 2.2rem;
+}
+.gouwuche-nav div:nth-child(2) span{
+	font-size: 0.8rem;
+}
+.gouwuche-nav div:nth-child(2) img{
+	width: 1.15rem;
+	height: 1.1rem;
+}
+.gouwuche-main{
+	margin-top: 50%;
+	text-align: center;
+}
+

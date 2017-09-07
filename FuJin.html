@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta content="width=device-width,user-scalable=no" name="viewport">
+		<link rel="icon" href="images/ytw-icon" />
+		<link rel="stylesheet" type="text/css" href="css/app.css" />
+		<script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+		<script type="text/javascript" src="js/demo.js"></script>
+		<title>附近</title>
+
+		<script>
+			(function() {
+				var html = document.documentElement;
+				var width = html.getBoundingClientRect().width;
+				html.style.fontSize = width / 18.7 + "px";
+			})();
+			//1rem=20px
+		</script>
+	</head>
+
+	<body>
+		<div class="fujin-nav clear">
+			<ul>
+				<li class="fujin-nav-li1">
+					<span>
+						<img src="images/sousuoye_sousuo.png"/>
+						<input type="text" placeholder="查找商家"/>
+					</span>
+				</li>
+				<li class="fujin-nav-li2">
+					<a href="XiaoXi.html"><img src="images/ytw_shouye_xiaoxi.png"/></a>
+				</li>
+			</ul>
+		</div>
+		<div style="height: 2.25rem;"></div>
+
+		<!-- screening -->
+		<div class="screening">
+			<ul>
+				<li class="Regional">智能排序&nbsp;<span class="screening-span1"></span></li>
+				<li class="Brand">筛选&nbsp;<span class="screening-span2"></span></li>
+			</ul>
+		</div>
+		<!-- End screening -->
+		<!-- grade -->
+		<div class="grade-eject">
+			<ul class="grade-s" id="grades">
+				<li onclick="grades(this)">
+					<a href="">智能排序</a>
+				</li>
+				<li onclick="grades(this)">
+					<a href="">距离最近</a>
+				</li>
+				<li onclick="grades(this)">
+					<a href="">起步价最低</a>
+				</li>
+				<li onclick="grades(this)">
+					<a href="">评分最高</a>
+				</li>
+			</ul>
+		</div>
+		<!-- End grade -->
+		<!-- Category -->
+		<div class="Category-eject">
+			<ul class="Category-s" id="Categorys">
+				<li onclick="Categorys(this)">
+					<a href="">连锁</a>
+				</li>
+				<li onclick="Categorys(this)">
+					<a href="">连锁</a>
+				</li>
+				<li onclick="Categorys(this)">
+					<a href="">单店</a>
+				</li>
+				<li onclick="Categorys(this)">
+					<a href="">促销</a>
+				</li>
+				<li class="fujin-option">
+					<div>
+						<input type="button" value="清除" />
+					</div>
+					<div>
+						<input type="button" value="确定" />
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div style="height: 45px;"></div>
+
+		<div class="ytw-sj clear">
+			<a href="DianPuShouYe.html">
+				<div class="ytw-sj1">
+					<img src="images/bangdianbao_vip.png">
+					<img src="images/1498699974.png" width="65px">
+				</div>
+				<div class="ytw-sj2">
+					<div class="sj2-bt">
+						<span><img src="images/dandian.png" width="30px"></span>
+						<span>婴正全国连锁（厦门）配送中心</span>
+					</div>
+					<div class="sj2-bt2">
+						<span><img src="images/xingxingliang.png" width="10px"><img src="images/xingxingliang.png" width="10px"><img src="images/xingxingliang.png" width="10px"><img src="images/xingxingliang.png" width="10px"><img src="images/xingxingliang.png" width="10px"></span>
+						<span>厦门湖里区长乐路350号国际展览馆4026</span>
+					</div>
+					<div class="sj2-bt3 clear">
+						<div>￥200.0起送</div>
+						<div>54m</div>
+					</div>
+					<div class="sj2-bt4">
+						<img src="images/miao.png" width="13px"> <span>1个秒杀</span>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="ytw-sj clear">
+			<a href="DianPuShouYe.html">
+				<div class="ytw-sj1">
+					<img src="images/bangdianbao_vip.png">
+					<img src="images/1498699974.png" width="65px">
+				</div>
+				<div class="ytw-sj2">
+					<div class="sj2-bt">
+						<span><img src="images/liansuo.png" width="30px"></span>
+						<span>亲贝妇幼用品</span>
+					</div>
+					<div class="sj2-bt2">
+						<span><img src="images/xingxingliang.png" width="10px"><img src="images/xingxingan.png" width="10px"><img src="images/xingxingan.png" width="10px"><img src="images/xingxingan.png" width="10px"><img src="images/xingxingan.png" width="10px"></span>
+						<span>厦门市同安区西官浔里269-3</span>
+					</div>
+					<div class="sj2-bt3 clear">
+						<div>￥300.0起送</div>
+						<div>15km</div>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="ytw-sj clear">
+			<a href="DianPuShouYe.html">
+				<div class="ytw-sj1">
+					<img src="images/bangdianbao_vip.png">
+					<img src="images/1498699974.png" width="65px">
+				</div>
+				<div class="ytw-sj2">
+					<div class="sj2-bt">
+						<span><img src="images/liansuo.png" width="30px"></span>
+						<span>阿拉小优</span>
+					</div>
+					<div class="sj2-bt2">
+						<span><img src="images/xingxingliang.png" width="10px"><img src="images/xingxingan.png" width="10px"><img src="images/xingxingan.png" width="10px"><img src="images/xingxingan.png" width="10px"><img src="images/xingxingan.png" width="10px"></span>
+						<span>厦门市湖里区4026</span>
+					</div>
+					<div class="sj2-bt3 clear">
+						<div>￥0.0起送</div>
+						<div>60m</div>
+					</div>
+					<div class="sj2-bt4">
+						<img src="images/miao.png" width="13px"> <span>1个秒杀</span>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="ytw-sj clear">
+			<a href="DianPuShouYe.html">
+				<div class="ytw-sj1">
+					<img src="images/bangdianbao_vip.png">
+					<img src="images/1498699974.png" width="65px">
+				</div>
+				<div class="ytw-sj2">
+					<div class="sj2-bt">
+						<span><img src="images/dandian.png" width="30px"></span>
+						<span>小又又生活馆</span>
+					</div>
+					<div class="sj2-bt2">
+						<span><img src="images/xingxingliang.png" width="10px"><img src="images/xingxingan.png" width="10px"><img src="images/xingxingan.png" width="10px"><img src="images/xingxingan.png" width="10px"><img src="images/xingxingan.png" width="10px"></span>
+						<span>厦门市翔安区马巷镇郑坂社区</span>
+					</div>
+					<div class="sj2-bt3 clear">
+						<div>￥0.0起送</div>
+						<div>18km</div>
+					</div>
+					<div class="sj2-bt4">
+						<img src="images/miao.png" width="13px"> <span>1个秒杀</span>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="ytw-sjj clear">
+			<a href="DianPuShouYe.html">
+				<div class="ytw-sj1">
+					<img src="images/bangdianbao_vip.png">
+					<img src="images/1498699974.png" width="65px">
+				</div>
+				<div class="ytw-sj2">
+					<div class="sj2-bt">
+						<span><img src="images/liansuo.png" width="30px"></span>
+						<span>优家宝贝海上五月花</span>
+					</div>
+					<div class="sj2-bt2">
+						<span><img src="images/xingxingliang.png" width="10px"><img src="images/xingxingan.png" width="10px"><img src="images/xingxingan.png" width="10px"><img src="images/xingxingan.png" width="10px"><img src="images/xingxingan.png" width="10px"></span>
+						<span>厦门市集美区巧英街道东安北四里403号</span>
+					</div>
+					<div class="sj2-bt3 clear">
+						<div>￥300.0起送</div>
+						<div>8km</div>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="ytw-sj clear">
+			<a href="DianPuShouYe.html">
+				<div class="ytw-sj1">
+					<img src="images/bangdianbao_vip.png">
+					<img src="images/1498699974.png" width="65px">
+				</div>
+				<div class="ytw-sj2">
+					<div class="sj2-bt">
+						<span><img src="images/dandian.png" width="30px"></span>
+						<span>婴正全国连锁（厦门）配送中心</span>
+					</div>
+					<div class="sj2-bt2">
+						<span><img src="images/xingxingliang.png" width="10px"><img src="images/xingxingliang.png" width="10px"><img src="images/xingxingliang.png" width="10px"><img src="images/xingxingliang.png" width="10px"><img src="images/xingxingliang.png" width="10px"></span>
+						<span>厦门湖里区长乐路350号国际展览馆4026</span>
+					</div>
+					<div class="sj2-bt3 clear">
+						<div>￥200.0起送</div>
+						<div>54m</div>
+					</div>
+					<div class="sj2-bt4">
+						<img src="images/miao.png" width="13px"> <span>1个秒杀</span>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="ytw-sj clear">
+			<a href="DianPuShouYe.html">
+				<div class="ytw-sj1">
+					<img src="images/bangdianbao_vip.png">
+					<img src="images/1498699974.png" width="65px">
+				</div>
+				<div class="ytw-sj2">
+					<div class="sj2-bt">
+						<span><img src="images/liansuo.png" width="30px"></span>
+						<span>亲贝妇幼用品</span>
+					</div>
+					<div class="sj2-bt2">
+						<span><img src="images/xingxingliang.png" width="10px"><img src="images/xingxingan.png" width="10px"><img src="images/xingxingan.png" width="10px"><img src="images/xingxingan.png" width="10px"><img src="images/xingxingan.png" width="10px"></span>
+						<span>厦门市同安区西官浔里269-3</span>
+					</div>
+					<div class="sj2-bt3 clear">
+						<div>￥300.0起送</div>
+						<div>15km</div>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="ytw-sj clear">
+			<a href="DianPuShouYe.html">
+				<div class="ytw-sj1">
+					<img src="images/bangdianbao_vip.png">
+					<img src="images/1498699974.png" width="65px">
+				</div>
+				<div class="ytw-sj2">
+					<div class="sj2-bt">
+						<span><img src="images/liansuo.png" width="30px"></span>
+						<span>阿拉小优</span>
+					</div>
+					<div class="sj2-bt2">
+						<span><img src="images/xingxingliang.png" width="10px"><img src="images/xingxingan.png" width="10px"><img src="images/xingxingan.png" width="10px"><img src="images/xingxingan.png" width="10px"><img src="images/xingxingan.png" width="10px"></span>
+						<span>厦门市湖里区4026</span>
+					</div>
+					<div class="sj2-bt3 clear">
+						<div>￥0.0起送</div>
+						<div>60m</div>
+					</div>
+					<div class="sj2-bt4">
+						<img src="images/miao.png" width="13px"> <span>1个秒杀</span>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="ytw-sj clear">
+			<a href="DianPuShouYe.html">
+				<div class="ytw-sj1">
+					<img src="images/bangdianbao_vip.png">
+					<img src="images/1498699974.png" width="65px">
+				</div>
+				<div class="ytw-sj2">
+					<div class="sj2-bt">
+						<span><img src="images/dandian.png" width="30px"></span>
+						<span>小又又生活馆</span>
+					</div>
+					<div class="sj2-bt2">
+						<span><img src="images/xingxingliang.png" width="10px"><img src="images/xingxingan.png" width="10px"><img src="images/xingxingan.png" width="10px"><img src="images/xingxingan.png" width="10px"><img src="images/xingxingan.png" width="10px"></span>
+						<span>厦门市翔安区马巷镇郑坂社区</span>
+					</div>
+					<div class="sj2-bt3 clear">
+						<div>￥0.0起送</div>
+						<div>18km</div>
+					</div>
+					<div class="sj2-bt4">
+						<img src="images/miao.png" width="13px"> <span>1个秒杀</span>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="ytw-sjj clear">
+			<a href="DianPuShouYe.html">
+				<div class="ytw-sj1">
+					<img src="images/bangdianbao_vip.png">
+					<img src="images/1498699974.png" width="65px">
+				</div>
+				<div class="ytw-sj2">
+					<div class="sj2-bt">
+						<span><img src="images/liansuo.png" width="30px"></span>
+						<span>优家宝贝海上五月花</span>
+					</div>
+					<div class="sj2-bt2">
+						<span><img src="images/xingxingliang.png" width="10px"><img src="images/xingxingan.png" width="10px"><img src="images/xingxingan.png" width="10px"><img src="images/xingxingan.png" width="10px"><img src="images/xingxingan.png" width="10px"></span>
+						<span>厦门市集美区巧英街道东安北四里403号</span>
+					</div>
+					<div class="sj2-bt3 clear">
+						<div>￥300.0起送</div>
+						<div>8km</div>
+					</div>
+				</div>
+			</a>
+		</div>
+
+		<div style="height: 58px;"></div>
+		<!--共用footer-->
+		<footer class="ytw-footer">
+			<ul>
+				<li>
+					<a href="index.html"><img src="images/tab_home_normal.png" alt="首页" />
+						<p>首页</p>
+					</a>
+				</li>
+				<li>
+					<a href="FuJin.html"><img src="images/tab_near_selected.png" alt="附近" />
+						<p>附近</p>
+					</a>
+				</li>
+				<li>
+					<a href="SouSuo.html"><img src="images/tab_search_normal.png" alt="搜索" />
+						<p>搜索</p>
+					</a>
+				</li>
+				<li>
+					<a href="GouWuChe.html"><img src="images/tab_shopping_normal.png" alt="购物车" />
+						<p>购物车</p>
+					</a>
+				</li>
+				<li>
+					<a href="login/index.html"><img src="images/tab_mine_-normal.png" alt="我的" />
+						<p>我的</p>
+					</a>
+				</li>
+			</ul>
+		</footer>
+
+	</body>
+
+</html>

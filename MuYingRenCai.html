@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta content="width=device-width,user-scalable=no" name="viewport">
+		<link rel="icon" href="images/ytw.ico" />
+		<link rel="stylesheet" type="text/css" href="css/webapp.css" />
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+		<script type="text/javascript" src="js/demo.js"></script>
+		<title>母婴人才</title>
+		<script>
+			(function() {
+				var html = document.documentElement;
+				var width = html.getBoundingClientRect().width;
+				html.style.fontSize = width / 18.7 + "px";
+			})();
+			//1rem=20px
+		</script>
+	</head>
+
+	<body oncontextmenu="self.event.returnValue=false">
+		<header class="muying-fixed">
+			<h5>母婴人才</h5>
+			<a href="index.html"><img src="images/ytw_fanhui.png" /></a>
+			<a href="###" data-toggle="modal" data-target="#myModal"><img src="images/fabu.png" /></a>
+		</header>
+
+		<!-- 模态框（Modal） -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title" id="myModalLabel">
+					类型选择:
+				</h4>
+					</div>
+					<div class="modal-body">
+						<p>
+							<a href="MuYingRenCai-ZhaoPin.html"><img src="images/weixuanzhong.png" />　发布招聘</a>
+						</p>
+						<p>
+							<a href="MuYingRenCai-QiuZhi.html"><img src="images/weixuanzhong.png" />　发布求职</a>
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">关闭
+				</button>
+						<button type="button" class="btn btn-primary">
+					确定
+				</button>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal -->
+		</div>
+
+		<!--下拉菜单-->
+		<!-- screening -->
+		<div class="screening">
+			<ul>
+				<li class="Regional">招聘&nbsp;<span class="screening-span1"></span></li>
+				<li class="Brand">岗位&nbsp;<span class="screening-span1"></span></li>
+				<li class="Brand2">性别&nbsp;<span class="screening-span1"></span></li>
+				<li class="Brand3">年龄&nbsp;<span class="screening-span1"></span></li>
+			</ul>
+		</div>
+		<!-- End screening -->
+		<!-- grade -->
+		<div class="grade-eject">
+			<ul class="grade-s" id="grades">
+				<li onclick="grades(this)">
+					<a href="">智能排序</a>
+				</li>
+				<li onclick="grades(this)">
+					<a href="">招聘</a>
+				</li>
+				<li onclick="grades(this)">
+					<a href="">求职</a>
+				</li>
+			</ul>
+		</div>
+		<!-- End grade -->
+		<!-- Category -->
+		<div class="Category-eject">
+			<ul class="Category-s" id="Categorys">
+				<li onclick="Categorys(this)">
+					<a href="">全部</a>
+				</li>
+				<li onclick="Categorys(this)">
+					<a href="">全部</a>
+				</li>
+				<li onclick="Categorys(this)">
+					<a href="">保姆/月嫂</a>
+				</li>
+				<li onclick="Categorys(this)">
+					<a href="">临时促销员</a>
+				</li>
+				<li onclick="Categorys(this)">
+					<a href="">店长</a>
+				</li>
+				<li onclick="Categorys(this)">
+					<a href="">电源/导购</a>
+				</li>
+				<li onclick="Categorys(this)">
+					<a href="">区域主管/经理</a>
+				</li>
+			</ul>
+		</div>
+
+		<div style="height: 4.55rem;"></div>
+		<!--列表-->
+		<a href="ZhaoPinXiangQing.html">
+			<div class="myrc-main clear">
+				<div class="myrc-main1 left"><img src="images/yingnaifen.jpg"/></div>
+				<div class="myrc-main2 left">
+					<div class="clear">
+						<h4 class="left">爱婴岛诚聘母婴顾问</h4>
+						<p class="right">16天前</p>
+					</div>
+					<p>2000-3000元/月</p>
+					<p>店员/导购</p>
+					<div class="clear">
+						<p class="left">婴通网</p>
+						<p class="right">福建省厦门市湖里区长乐路</p>
+					</div>
+				</div>
+			</div>
+		</a>
+		<a href="ZhaoPinXiangQing.html">
+			<div class="myrc-main clear">
+				<div class="myrc-main1 left"><img src="images/yingnaifen.jpg"/></div>
+				<div class="myrc-main2 left">
+					<div class="clear">
+						<h4 class="left">爱婴岛诚聘母婴顾问</h4>
+						<p class="right">16天前</p>
+					</div>
+					<p>2000-3000元/月</p>
+					<p>店员/导购</p>
+					<div class="clear">
+						<p class="left">婴通网</p>
+						<p class="right">福建省厦门市湖里区长乐路</p>
+					</div>
+				</div>
+			</div>
+		</a>
+		<a href="ZhaoPinXiangQing.html">
+			<div class="myrc-main clear">
+				<div class="myrc-main1 left"><img src="images/yingnaifen.jpg"/></div>
+				<div class="myrc-main2 left">
+					<div class="clear">
+						<h4 class="left">爱婴岛诚聘母婴顾问</h4>
+						<p class="right">16天前</p>
+					</div>
+					<p>2000-3000元/月</p>
+					<p>店员/导购</p>
+					<div class="clear">
+						<p class="left">婴通网</p>
+						<p class="right">福建省厦门市湖里区长乐路</p>
+					</div>
+				</div>
+			</div>
+		</a>
+		<a href="ZhaoPinXiangQing.html">
+			<div class="myrc-main clear">
+				<div class="myrc-main1 left"><img src="images/yingnaifen.jpg"/></div>
+				<div class="myrc-main2 left">
+					<div class="clear">
+						<h4 class="left">爱婴岛诚聘母婴顾问</h4>
+						<p class="right">16天前</p>
+					</div>
+					<p>2000-3000元/月</p>
+					<p>店员/导购</p>
+					<div class="clear">
+						<p class="left">婴通网</p>
+						<p class="right">福建省厦门市湖里区长乐路</p>
+					</div>
+				</div>
+			</div>
+		</a>
+		<a href="ZhaoPinXiangQing.html">
+			<div class="myrc-main clear">
+				<div class="myrc-main1 left"><img src="images/yingnaifen.jpg"/></div>
+				<div class="myrc-main2 left">
+					<div class="clear">
+						<h4 class="left">爱婴岛诚聘母婴顾问</h4>
+						<p class="right">16天前</p>
+					</div>
+					<p>2000-3000元/月</p>
+					<p>店员/导购</p>
+					<div class="clear">
+						<p class="left">婴通网</p>
+						<p class="right">福建省厦门市湖里区长乐路</p>
+					</div>
+				</div>
+			</div>
+		</a>
+		<a href="ZhaoPinXiangQing.html">
+			<div class="myrc-main clear">
+				<div class="myrc-main1 left"><img src="images/yingnaifen.jpg"/></div>
+				<div class="myrc-main2 left">
+					<div class="clear">
+						<h4 class="left">爱婴岛诚聘母婴顾问</h4>
+						<p class="right">16天前</p>
+					</div>
+					<p>2000-3000元/月</p>
+					<p>店员/导购</p>
+					<div class="clear">
+						<p class="left">婴通网</p>
+						<p class="right">福建省厦门市湖里区长乐路</p>
+					</div>
+				</div>
+			</div>
+		</a>
+		<a href="ZhaoPinXiangQing.html">
+			<div class="myrc-main clear">
+				<div class="myrc-main1 left"><img src="images/yingnaifen.jpg"/></div>
+				<div class="myrc-main2 left">
+					<div class="clear">
+						<h4 class="left">爱婴岛诚聘母婴顾问</h4>
+						<p class="right">16天前</p>
+					</div>
+					<p>2000-3000元/月</p>
+					<p>店员/导购</p>
+					<div class="clear">
+						<p class="left">婴通网</p>
+						<p class="right">福建省厦门市湖里区长乐路</p>
+					</div>
+				</div>
+			</div>
+		</a>
+	</body>
+
+</html>

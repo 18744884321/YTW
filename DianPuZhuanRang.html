@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta content="width=device-width,user-scalable=no" name="viewport">
+		<link rel="icon" href="images/ytw.ico" />
+		<link rel="stylesheet" type="text/css" href="css/webapp.css" />
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+		<script type="text/javascript" src="js/demo.js"></script>
+		<title>店铺转让</title>
+		<script>
+			(function() {
+				var html = document.documentElement;
+				var width = html.getBoundingClientRect().width;
+				html.style.fontSize = width / 18.7 + "px";
+			})();
+			//1rem=20px
+		</script>
+	</head>
+
+	<body oncontextmenu="self.event.returnValue=false">
+		<header class="muying-fixed">
+			<h5>店铺转让</h5>
+			<a href="index.html"><img src="images/ytw_fanhui.png" /></a>
+			<a href="###"><img src="images/fabu.png" /></a>
+			<a href="MuYingJiGou-sousuo.html"><img src="images/sousuo.png" /></a>
+		</header>
+
+		<!--下拉菜单-->
+		<!-- screening -->
+		<div class="screening">
+			<ul>
+				<li class="Regional">城市&nbsp;<span class="screening-span1"></span></li>
+				<li class="Brand">距离&nbsp;<span class="screening-span1"></span></li>
+				<li class="Brand2">价格&nbsp;<span class="screening-span1"></span></li>
+				<li class="Brand3">最新&nbsp;<span class="screening-span1"></span></li>
+			</ul>
+		</div>
+		<!-- End screening -->
+		<!-- grade -->
+		<div class="grade-eject">
+			<ul class="grade-s" id="grades">
+				<li onclick="grades(this)">
+					<a href="">智能排序</a>
+				</li>
+				<li onclick="grades(this)">
+					<a href="">厦门市</a>
+				</li>
+				<li onclick="grades(this)">
+					<a href="">海沧区</a>
+				</li>
+				<li onclick="grades(this)">
+					<a href="">湖里区</a>
+				</li>
+				<li onclick="grades(this)">
+					<a href="">思明区</a>
+				</li>
+				<li onclick="grades(this)">
+					<a href="">同安区</a>
+				</li>
+				<li onclick="grades(this)">
+					<a href="">集美区</a>
+				</li>
+			</ul>
+		</div>
+		<!-- End grade -->
+		<!-- Category -->
+		<div class="Category-eject">
+			<ul class="Category-s" id="Categorys">
+				<li onclick="Categorys(this)">
+					<a href="">全部</a>
+				</li>
+				<li onclick="Categorys(this)">
+					<a href="">附近</a>
+				</li>
+				<li onclick="Categorys(this)">
+					<a href="">1K</a>
+				</li>
+				<li onclick="Categorys(this)">
+					<a href="">3KM</a>
+				</li>
+				<li onclick="Categorys(this)">
+					<a href="">5KM</a>
+				</li>
+				<li onclick="Categorys(this)">
+					<a href="">10KM</a>
+				</li>
+				<li onclick="Categorys(this)">
+					<a href="">全城</a>
+				</li>
+			</ul>
+		</div>
+
+		<div style="height: 4.55rem;"></div>
+		<!--列表-->
+		<a href="DianPuXiangQing.html">
+			<div class="dpzr-main clear">
+				<div class="dpzr-main1 left">
+					<img src="images/yingnaifen.jpg"/>
+				</div>
+				<div class="dpzr-main2 left">
+					<div class="dpzr-main3 clear">
+						<h4 class="left">（转让）低价转让母婴专卖店@岛</h4>
+						<p class="right">1月前</p>
+					</div>
+					<div class="dpzr-main4 clear">
+						<p class="left">地址:福建省厦门市湖里区安兜社327号</p>
+						<p class="right">5.00万</p>
+					</div>
+					<div class="dpzr-main5">
+						<p>距离:3.0km</p>
+						<p>浏览:187次</p>
+					</div>
+				</div>
+			</div>
+		</a>
+		<a href="DianPuXiangQing.html">
+			<div class="dpzr-main clear">
+				<div class="dpzr-main1 left">
+					<img src="images/yingnaifen.jpg"/>
+				</div>
+				<div class="dpzr-main2 left">
+					<div class="dpzr-main3 clear">
+						<h4 class="left">（转让）低价转让母婴专卖店@岛</h4>
+						<p class="right">1月前</p>
+					</div>
+					<div class="dpzr-main4 clear">
+						<p class="left">地址:福建省厦门市湖里区安兜社327号</p>
+						<p class="right">5.00万</p>
+					</div>
+					<div class="dpzr-main5">
+						<p>距离:3.0km</p>
+						<p>浏览:187次</p>
+					</div>
+				</div>
+			</div>
+		</a>
+		<a href="DianPuXiangQing.html">
+			<div class="dpzr-main clear">
+				<div class="dpzr-main1 left">
+					<img src="images/yingnaifen.jpg"/>
+				</div>
+				<div class="dpzr-main2 left">
+					<div class="dpzr-main3 clear">
+						<h4 class="left">（转让）低价转让母婴专卖店@岛</h4>
+						<p class="right">1月前</p>
+					</div>
+					<div class="dpzr-main4 clear">
+						<p class="left">地址:福建省厦门市湖里区安兜社327号</p>
+						<p class="right">5.00万</p>
+					</div>
+					<div class="dpzr-main5">
+						<p>距离:3.0km</p>
+						<p>浏览:187次</p>
+					</div>
+				</div>
+			</div>
+		</a>
+		<a href="DianPuXiangQing.html">
+			<div class="dpzr-main clear">
+				<div class="dpzr-main1 left">
+					<img src="images/yingnaifen.jpg"/>
+				</div>
+				<div class="dpzr-main2 left">
+					<div class="dpzr-main3 clear">
+						<h4 class="left">（转让）低价转让母婴专卖店@岛</h4>
+						<p class="right">1月前</p>
+					</div>
+					<div class="dpzr-main4 clear">
+						<p class="left">地址:福建省厦门市湖里区安兜社327号</p>
+						<p class="right">5.00万</p>
+					</div>
+					<div class="dpzr-main5">
+						<p>距离:3.0km</p>
+						<p>浏览:187次</p>
+					</div>
+				</div>
+			</div>
+		</a>
+		<a href="DianPuXiangQing.html">
+			<div class="dpzr-main clear">
+				<div class="dpzr-main1 left">
+					<img src="images/yingnaifen.jpg"/>
+				</div>
+				<div class="dpzr-main2 left">
+					<div class="dpzr-main3 clear">
+						<h4 class="left">（转让）低价转让母婴专卖店@岛</h4>
+						<p class="right">1月前</p>
+					</div>
+					<div class="dpzr-main4 clear">
+						<p class="left">地址:福建省厦门市湖里区安兜社327号</p>
+						<p class="right">5.00万</p>
+					</div>
+					<div class="dpzr-main5">
+						<p>距离:3.0km</p>
+						<p>浏览:187次</p>
+					</div>
+				</div>
+			</div>
+		</a>
+		<a href="DianPuXiangQing.html">
+			<div class="dpzr-main clear">
+				<div class="dpzr-main1 left">
+					<img src="images/yingnaifen.jpg"/>
+				</div>
+				<div class="dpzr-main2 left">
+					<div class="dpzr-main3 clear">
+						<h4 class="left">（转让）低价转让母婴专卖店@岛</h4>
+						<p class="right">1月前</p>
+					</div>
+					<div class="dpzr-main4 clear">
+						<p class="left">地址:福建省厦门市湖里区安兜社327号</p>
+						<p class="right">5.00万</p>
+					</div>
+					<div class="dpzr-main5">
+						<p>距离:3.0km</p>
+						<p>浏览:187次</p>
+					</div>
+				</div>
+			</div>
+		</a>
+	</body>
+
+</html>

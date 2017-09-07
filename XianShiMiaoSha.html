@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta content="width=device-width,user-scalable=no" name="viewport">
+		<link rel="icon" href="images/ytw.ico" />
+		<link rel="stylesheet" type="text/css" href="css/webapp.css" />
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+		<title>限时秒杀</title>
+		<script>
+			(function() {
+				var html = document.documentElement;
+				var width = html.getBoundingClientRect().width;
+				html.style.fontSize = width / 18.7 + "px";
+			})();
+			//1rem=20px
+		</script>
+	</head>
+
+	<body oncontextmenu="self.event.returnValue=false">
+		<header class="muying-fixed">
+			<h5>限时秒杀</h5>
+			<a href="index.html"><img src="images/ytw_fanhui.png" /></a>
+		</header>
+
+		<div class="subnav subnav-xsms">
+			<ul>
+				<li class="active2 repeat-yuezi">
+					<p>全部</p>
+				</li>
+				<li>
+					<p>奶粉</p>
+				</li>
+				<li>
+					<p>尿裤</p>
+				</li>
+				<li>
+					<p>辅食</p>
+				</li>
+				<li>
+					<p>洗护</p>
+				</li>
+				<li>
+					<p>哺育</p>
+				</li>
+				<li>
+					<p>玩具</p>
+				</li>
+				<li>
+					<p>童装</p>
+				</li>
+				<li>
+					<p>车床</p>
+				</li>
+				<li>
+					<p>其他</p>
+				</li>
+			</ul>
+		</div>
+		<div style="height: 4.5rem;"></div>
+		<!--列表-->
+		<div class="xsms-main clear">
+			<a href="ShangPinXiangQing.html">
+				<div class="xsms-main1 left">
+					<div class="xsms-main2">
+						<img src="images/1498699974.png"/>
+						<h4>原装进口法国智睿婴儿配方奶粉一段900克</h4>
+						<div class="xsms-main3">
+							<span>￥</span>
+							<span>200.0</span>
+							<s>￥298.0</s>
+						</div>
+						<div class="xsms-main4 clear">
+							<div>01</div>
+							<div>天</div>
+							<div>04</div>
+							<div>:</div>
+							<div>35</div>
+							<div>:</div>
+							<div>30</div>
+						</div>
+						<div class="xsms-main5 clear">
+							<p>婴正全国连锁（厦门）配送中心</p>
+							<p>64m</p>
+						</div>
+					</div>
+				</div>
+			</a>
+			<a href="">
+				<div class="xsms-main1 left">
+					<div class="xsms-main2">
+						<img src="images/1498699974.png"/>
+						<h4>原装进口法国智睿婴儿配方奶粉一段900克</h4>
+						<div class="xsms-main3">
+							<span>￥</span>
+							<span>200.0</span>
+							<s>￥298.0</s>
+						</div>
+						<div class="xsms-main4 clear">
+							<div>01</div>
+							<div>天</div>
+							<div>04</div>
+							<div>:</div>
+							<div>35</div>
+							<div>:</div>
+							<div>30</div>
+						</div>
+						<div class="xsms-main5 clear">
+							<p>婴正全国连锁（厦门）配送中心</p>
+							<p>64m</p>
+						</div>
+					</div>
+				</div>
+			</a>
+			<a href="">
+				<div class="xsms-main1 left">
+					<div class="xsms-main2">
+						<img src="images/1498699974.png"/>
+						<h4>原装进口法国智睿婴儿配方奶粉一段900克</h4>
+						<div class="xsms-main3">
+							<span>￥</span>
+							<span>200.0</span>
+							<s>￥298.0</s>
+						</div>
+						<div class="xsms-main4 clear">
+							<div>01</div>
+							<div>天</div>
+							<div>04</div>
+							<div>:</div>
+							<div>35</div>
+							<div>:</div>
+							<div>30</div>
+						</div>
+						<div class="xsms-main5 clear">
+							<p>婴正全国连锁（厦门）配送中心</p>
+							<p>64m</p>
+						</div>
+					</div>
+				</div>
+			</a>
+		</div>
+		
+
+		<script type="text/javascript">
+			$(".subnav ul li").click(function() {
+				setSubnavLeft($(this).index());
+			});
+
+			function setSubnavLeft(index) {
+				$(".subnav ul li").eq(index).addClass("active2").siblings().removeClass("active2");
+				var width = $(".subnav ul").width();
+				var thisWidth = $(".subnav ul li").eq(index).width();
+				var left = Math.abs($(".subnav ul li").offset().left);
+				var thisLeft = $(".subnav ul li").eq(index).offset().left;
+				var scrollLeft = left + thisLeft + thisWidth / 2 - width / 2;
+				$(".subnav ul").animate({
+					scrollLeft: scrollLeft
+				}, 300);
+			}
+		</script>
+	</body>
+
+</html>

@@ -1,3 +1,3 @@
 # YTW
-婴通网：m.yingtongwang.net
-www.ytwang.net
+婴通网：http://m.yingtongwang.net
+http://www.ytwang.net
